@@ -109,9 +109,9 @@ this is run whenever you run `thor blahblahblah` on the command line.
 
 Thor::Runner.start is easy to find in your editor, just look at the stacktrace, it tells us it's at
 
-from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/lib/thor.rb:275:in `dispatch'
-from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/**lib/thor/base.rb:425**:in `start'
-from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/bin/thor:6:in `<top (required)>'
+from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/lib/thor.rb:275:in 'dispatch'
+from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/ **lib/thor/base.rb:425** :in 'start'
+from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/bin/thor:6:in '<top (required)>'
 
 
 ```ruby
