@@ -84,6 +84,7 @@ from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/bin/thor:19:in `load
 from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/bin/thor:19:in `<main>'
 ```
 
+
 but on inspection of /bin/thor line 19 don't exist - **Does anyone know why this happen???**
 
 anyway just skip them and move up the stacktrace untill you find something relevant. Luckily
@@ -105,15 +106,6 @@ Thor::Runner.start
 ```
 
 this is run whenever you run `thor blahblahblah` on the command line.
-
-
-
-
-**Nice to have a sidebar explaining how typing thor on the command line is piped to the gems code**
-## Sidebar - Rubygems, Paths and command line scripts.
-*Extreme Accuracy Lacking* 
-Rubygems, the system that manages your gems, places a gems file in your system's path. So when you type thor, rubygems looks for a file that can respond to such a call. If it doesnt find anything you'll get an error. But since thor is installed this file will get called. 
-
 
 Thor::Runner.start is easy to find in your editor, just look at the stacktrace, it tells us it's at
 
@@ -150,26 +142,10 @@ from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/gems/thor-0.16.0/bin
 ```
 
 
+##Sidebars 
+Explain topics in more detail that are mentioned in the explanation but which are a little off topic 
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-### Sidebar - How to inspect whats going on inside whilst on the go
+### Sidebar - How to inspect whats going on inside a gem 
 #### use puts statements
 simple example
 
@@ -187,7 +163,7 @@ Link to a screencase / homepage
 Please add em here.
 
 
-### Sidebar - How to play with a gem's code
+### Sidebar - How to hack away at a gem safely
 You definately don't want to mess with gems you are using in other projects.
 
 You need a temporary copy of a gem.
@@ -206,9 +182,19 @@ To find the codereading gemset directory and all it's gems
 
 `rvm gemdir` 
 
+which will tell you the directory of the current gemset (i.e. codereading )
+
 where you'll find a directory "gems"
 
-and a directory for thor
+and a directory below it for thor 
+
+### Sidebar - Rubygems, Paths and command line scripts.
+Nice to have a sidebar explaining how typing thor (or any other ruby command) on the command line is piped to the gems code
+
+**WARNING - inacurate info to proceed - please edit**
+
+Rubygems, the system that manages your gems, places a gems file in your system's path. So when you type thor, rubygems looks for a file that can respond to such a call. If it doesnt find anything you'll get an error. But since thor is installed this file will get called. 
+
 
 
 
