@@ -29,13 +29,13 @@ Try creating some trivial examples using parameters and opiton types (:boolean, 
 
 Where to start?
 
-Easy way is to just follow the code as it is run. Pick a trivial app, and the insert a raise to see the stacktrace of all the methods called upto that point. 
+Easy way is to just follow the code as it is run. Decide on a trivial thor app, and then insert a raise to see the stacktrace of all the methods called upto that point. 
 
 To do this...
 
 1 Create a trivial thor file
 
-2 In a directory of your choice create this file
+In a directory of your choice create this file
 
 ```
 #example.thor
@@ -47,7 +47,7 @@ class App < Thor
 end
 ```	
 
-3 Run
+2 Run
 
 `thor app:boom`
 
@@ -71,7 +71,7 @@ You should get a stacktrace roughly similiar to this
 	from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/bin/ruby_noexec_wrapper:14:in `eval'
 	from /Users/adam/.rvm/gems/ruby-1.9.3-p194-Ruby@codereading/bin/ruby_noexec_wrapper:14:in `<main>'
 ```
-
+The stacktrace is ordered with the last method called being first. i.e.
 The top line is the last method called - the method with our raise call.
 The bottom line is the birthpoint of the program.
 
