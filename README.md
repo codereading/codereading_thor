@@ -1,28 +1,56 @@
-[![Build Status](https://secure.travis-ci.org/wycats/thor.png?branch=master)](http://travis-ci.org/wycats/thor)
+#Codereading Thor
 
-Thor
-====
+## Why was Thor created
+Who created it
+Why did they want to make thor.
+What problems does it solve etc etc
 
-Description
------------
-Thor is a simple and efficient tool for building self-documenting command line
-utilities.  It removes the pain of parsing command line options, writing
-"USAGE:" banners, and can also be used as an alternative to the [Rake][rake]
-build tool.  The syntax is Rake-like, so it should be familiar to most Rake
-users.
+## Examples of using command line and ruby executables
+Use rails as example
 
-[rake]: https://github.com/jimweirich/rake
+- *simple example:* rake routes
+- *action plus param*: rails new shiny_app
+- *action plus boolean options:* rails some_action --some_boolean_param
+- *action plus array of options:* rails generate controller Products index show new create
+- *action plus an alias:* rails g controller Posts
 
-Installation
-------------
-    gem install thor
+## Command line parsing before thor 
+Show the pain point thor solves.
+Example of a simple ruby script that accepts and parses args from command line. 
+Show how it can get complicated.
 
-Usage and documentation
------------------------
-Please see [the wiki](https://github.com/wycats/thor/wiki) for basic usage and other documentation on using Thor.
+## Getting started
 
-License
--------
-Released under the MIT License.  See the [LICENSE][license] file for further details.
+### How to view a gems source code.
+gem unbundle gem_name
 
-[license]: https://github.com/wycats/thor/blob/master/LICENSE.md
+downside is this is just a copy of the actual gem. Any changes you make are not reflected.
+
+to view the gem itself 
+
+**how do you do this?**
+
+### How to inspect whats going on inside whilst on the go
+puts statements
+require
+pry
+ruby-debug
+
+### How to use these little tools with gems
+Dont want to mess with gems you are using in other projects.
+Use rvm to create a gemset specific for codereading
+
+`rvm gemste create codereading`
+
+get thor
+`gem install thor`
+
+to view in your editor
+
+`
+
+`
+
+
+
+
