@@ -21,7 +21,7 @@ Use rails as example
 
 ## Getting started
 
-Read the useage on thor's wiki - link please!
+Read the useage on [thor's wiki](https://github.com/wycats/thor/wiki "Thor's wiki").
 
 Try creating some trivial examples using parameters and opiton types (:boolean, :string etc)
 
